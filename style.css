@@ -1,0 +1,104 @@
+
+#container{
+    background-color: #AED6F1 ;
+    height: 100vh;
+    width: 100%;
+}
+#child_container{
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #ECF0F1 ;
+    width: 600px;
+    min-height: 500px;
+    max-height:fit-content ;
+    border-radius: 1%;
+    margin: 2%;
+    box-shadow: 10px 10px 10px #C0C0C0;
+}
+#input_word{
+    background-color: #fff;
+    border: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0%;
+}
+#input_word:focus{
+    border-color: cadetblue;
+    transform: scale(0.98);
+}
+#search_btn{
+   text-decoration: none;
+   border: none;
+   outline: none;
+}
+#voice_button{
+    border: none;
+}
+#line{
+   background-color:#fff;
+}
+#line_head{
+    background-color: #5D6D7E ;
+}
+#word h5{
+    color: #797D7F;
+}
+#example{
+    color: #707B7C;
+}
+#header{
+    color: #34495E ;
+}
+#icon:hover{
+    cursor: pointer;
+    font:bold;
+    /* font-size: 25px; */
+    color: darkslategrey;
+    text-shadow: 0 0 5px #1b3b3f;;
+    outline: none;
+
+}
+/* 
+========================
+      BUTTON THREE
+========================
+*/
+.btn-three {
+  color: #020312;
+  transition: all 0.5s;
+  position: relative;
+}
+.btn-three::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(67, 65, 65, 0.1);
+  transition: all 0.3s;
+}
+.btn-three:hover::before {
+  opacity: 0 ;
+  transform: scale(0.5,0.5);
+}
+.btn-three::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(11, 11, 11, 0.929);
+  transform: scale(1.2,1.2);
+}
+.btn-three:hover::after {
+  opacity: 1;
+  transform: scale(1,1);
+}
